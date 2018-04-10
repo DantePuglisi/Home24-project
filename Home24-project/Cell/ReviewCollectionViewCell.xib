@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ReviewCollectionViewCell" customModule="Home24_project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUi-Lz-zTt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-iX-vSW">
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QbZ-iX-vSW" secondAttribute="height" multiplier="1:1" id="Z7W-In-0MZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmu-ED-32S">
+                                <rect key="frame" x="179" y="71" width="219" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lmu-ED-32S" firstAttribute="leading" secondItem="QbZ-iX-vSW" secondAttribute="trailing" constant="16" id="7Zz-r0-egr"/>
+                            <constraint firstItem="QbZ-iX-vSW" firstAttribute="leading" secondItem="fUi-Lz-zTt" secondAttribute="leading" id="CL1-hp-btw"/>
+                            <constraint firstAttribute="trailing" secondItem="Lmu-ED-32S" secondAttribute="trailing" constant="16" id="fbK-Jp-noZ"/>
+                            <constraint firstItem="Lmu-ED-32S" firstAttribute="centerY" secondItem="fUi-Lz-zTt" secondAttribute="centerY" id="utG-l8-Y5A"/>
+                            <constraint firstAttribute="bottom" secondItem="QbZ-iX-vSW" secondAttribute="bottom" id="vnh-zp-UV8"/>
+                            <constraint firstItem="QbZ-iX-vSW" firstAttribute="top" secondItem="fUi-Lz-zTt" secondAttribute="top" id="zXB-v5-1ng"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fUi-Lz-zTt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AYr-wO-npj"/>
+                <constraint firstItem="fUi-Lz-zTt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HRA-0b-Rg3"/>
+                <constraint firstAttribute="trailing" secondItem="fUi-Lz-zTt" secondAttribute="trailing" id="PmM-Bk-GJI"/>
+                <constraint firstAttribute="bottom" secondItem="fUi-Lz-zTt" secondAttribute="bottom" id="xnx-w1-qYK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="414" height="163"/>
+            <connections>
+                <outlet property="backView" destination="fUi-Lz-zTt" id="Spa-kb-DNU"/>
+                <outlet property="imageView" destination="QbZ-iX-vSW" id="qTh-Ku-V0d"/>
+                <outlet property="labelLeadingConstraint" destination="7Zz-r0-egr" id="37h-kF-ekP"/>
+                <outlet property="labelTrailingConstraint" destination="fbK-Jp-noZ" id="Bxw-Ik-4lT"/>
+                <outlet property="titleLabel" destination="Lmu-ED-32S" id="sAd-lz-l8c"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="110.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

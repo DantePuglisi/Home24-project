@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.7.1)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - DisplaySwitcher (1.0.1)
+  - SnapKit (4.0.0)
+  - ZLSwipeableViewSwift (0.0.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireImage (~> 3.3)
+  - DisplaySwitcher (from `https://github.com/Yalantis/DisplaySwitcher.git`)
+  - SnapKit (~> 4.0.0)
+  - ZLSwipeableViewSwift (from `https://github.com/zhxnlai/ZLSwipeableViewSwift.git`, commit `59826e2`)
+
+EXTERNAL SOURCES:
+  DisplaySwitcher:
+    :git: https://github.com/Yalantis/DisplaySwitcher.git
+  ZLSwipeableViewSwift:
+    :commit: 59826e2
+    :git: https://github.com/zhxnlai/ZLSwipeableViewSwift.git
+
+CHECKOUT OPTIONS:
+  DisplaySwitcher:
+    :commit: a02d5a14562de988286d430c9e4b5b8cfb4893e1
+    :git: https://github.com/Yalantis/DisplaySwitcher.git
+  ZLSwipeableViewSwift:
+    :commit: 59826e2
+    :git: https://github.com/zhxnlai/ZLSwipeableViewSwift.git
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  DisplaySwitcher: 5f725284c28cdf22ea7ba2eee8e8f7e7cb9cdf87
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  ZLSwipeableViewSwift: 488041f77089bfc03fe1419579ef32e976709f5d
+
+PODFILE CHECKSUM: eafa9251d1a6bb87fecc8d1d57245b13f1500212
+
+COCOAPODS: 1.4.0
